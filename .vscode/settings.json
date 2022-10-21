@@ -1,0 +1,50 @@
+{
+  // johnpapa.peacock
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#65c89b",
+    "activityBar.activeBorder": "#945bc4",
+    "activityBar.background": "#65c89b",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#945bc4",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "sash.hoverBorder": "#65c89b",
+    "statusBar.background": "#42b883",
+    "statusBar.foreground": "#15202b",
+    "statusBarItem.hoverBackground": "#359268",
+    "statusBarItem.remoteBackground": "#42b883",
+    "statusBarItem.remoteForeground": "#15202b",
+    "titleBar.activeBackground": "#42b883",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveBackground": "#42b88399",
+    "titleBar.inactiveForeground": "#15202b99"
+  },
+
+  // johnpapa.peacock
+  "peacock.remoteColor": "#42b883",
+
+  // nberlette.gitpod-enhanced
+  "git.enableCommitSigning": true,
+
+  // eg2.vscode-npm-script
+  "npm.bin": "pnpm",
+  "npm.runInTerminal": true,
+  "npm.enableRunFromFolder": true,
+  "npm.fetchOnlinePackageInfo": true,
+  "npm.autoDetect": "on",
+  "npm.packageManager": "pnpm",
+  "npm.runSilent": true,
+  "npm.useRootDirectory": true,
+
+  // christian-kohler.npm-intellisense
+  "npm-intellisense.importES6": true,
+  "npm-intellisense.importQuotes": "'",
+  "npm-intellisense.importDeclarationType": "const", // for require()
+  "npm-intellisense.importLinebreak": "\n",
+  "npm-intellisense.recursivePackageJsonLookup": true,
+  "npm-intellisense.packageSubfoldersIntellisense": true,
+  "npm-intellisense.showBuildInLibs": true,
+  "npm-intellisense.scanDevDependencies": true,
+
+  // your extension here...?
+}

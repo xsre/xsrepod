@@ -1,0 +1,78 @@
+## for development use the local Dockerfile image
+image:
+  file: Dockerfile
+
+## for production use the following image (from ghcr or dockerhub)
+# image: nberlette/gitpod-enhanced:nightly
+
+## tasks
+# before:  runs on every start; e.g. terminal configurations
+# init:    runs on prebuilds only; e.g. install dependencies
+# command: runs on every start; e.g. hot reload dev server
+# name:    task name to display in the terminal
+
+gitConfig:
+  bash.showColorHints: "true"
+  bash.showUpstream: "auto"
+  bash.showUntrackedFiles: "false"
+  bash.showStashState: "true"
+  bash.showDirtyState: "true"
+  bash.hideIfPwdIgnored: "false"
+  init.defaultbranch: "main"
+  color.ui: "auto"
+  color.branch.current: "yellow reverse"
+  color.branch.local: "yellow"
+  color.branch.remote: "green"
+  color.diff.meta: "yellow bold"
+  color.diff.frag: "magenta bold"
+  color.diff.old: "red bold"
+  color.diff.new: "green bold"
+  color.status.added: "yellow"
+  color.status.changed: "green"
+  color.status.untracked: "red"
+  alias.bail: "reset HEAD --"
+  alias.graph: "!git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
+  alias.amend: "!git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend"
+  alias.setup: "!git init && git add . && git commit -m 'Initial commit.'"
+  alias.nb: "!git branch | grep ^* | awk '{ print $2 }'"
+  alias.cleanup: "!git ls-files -z --deleted | xargs -0 git rm"
+  alias.addnew: "!git cleanup && git add . --all"
+  url.https://github.com/.insteadof: "gh:"
+  url.https://gist.github.com/.insteadof: "gist:"
+  url.https://gitlab.com/.insteadof: "gl:"
+  url.https://bitbucket.org/.insteadof: "bb:"
+
+
+vscode:
+  extensions:
+    - github.copilot-nightly
+    - ms-azuretools.vscode-docker
+    - esbenp.prettier-vscode
+    - dbaeumer.vscode-eslint
+    - christian-kohler.npm-intellisense
+    - christian-kohler.path-intellisense
+    - eg2.vscode-npm-script
+    - Jacano.vscode-pnpm
+    - gamunu.vscode-yarn
+    - timonwong.shellcheck
+    - foxundermoon.shell-format
+    - mads-hartmann.bash-ide-vscode
+    - redhat.vscode-yaml
+    - vsls-contrib.gitdoc
+    - robertz.code-snapshot
+    - ms-vscode.cmake-tools
+
+ports:
+  - port: 3000-5000
+    onOpen: open-browser
+    visibility: private
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    addLabel: 'gitpod'
+    addCheck: true
+    addBadge: true
+    pullRequests: true
+    pullRequestsFromForks: true
