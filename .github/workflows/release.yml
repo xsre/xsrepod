@@ -33,8 +33,8 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            nberlette/gitpod-enhanced
-            ghcr.io/nberlette/gitpod-enhanced
+            sysrex/xsrepod
+            ghcr.io/sysrex/xsrepod
           # generate Docker tags based on the following events/attributes
           tags: |
             type=schedule
