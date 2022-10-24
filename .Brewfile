@@ -1,6 +1,5 @@
 tap "homebrew/bundle"
 tap "homebrew/core"
-tap "supabase/tap"
 
 brew "coreutils"
 brew "util-linux"
@@ -13,7 +12,4 @@ brew "rsync"
 brew "shellcheck"
 brew "shfmt"
 brew "starship"
-brew "supabase/tap/supabase"
-# prefer installing deno via dockerfile
-# brew "deno"
 brew "xclip"
