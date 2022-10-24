@@ -1,7 +1,7 @@
 ---
-title: 'gitpod-enhanced'
+title: 'xsrepod'
 home: true
-heroText: 'gitpod-enhanced'
+heroText: 'xsrepod'
 tagline:
 actionText: Get Started
 actionLink: /#install
@@ -12,22 +12,22 @@ features:
     details: 'Configured for GPG-signed commits right out of the box.'
   - title: 'Gitpod Ready'
     details: 'Ready to use in Gitpod Workspaces, with zero configuration.'
-footer: 'MIT © Nicholas Berlette'
+footer: 'MIT © sysrex'
 ---
 
 <div align="center" class="badges">
-  <a href="https://gitpod.io/#https://github.com/nberlette/gitpod-enhanced" target="_blank" title="Open in Gitpod: Ready to Code"><img src="https://img.shields.io/badge/Prebuild-READY%20%E2%86%97-8add44.svg?logo=gitpod&style=for-the-badge" alt="Open in Gitpod: Ready to Code" /></a>
-  <a href="https://github.com/nberlette/gitpod-enhanced/actions/workflows/docker-release.yml" title="CI Build Status: Docker Image"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/nberlette/gitpod-enhanced/Release%20Docker%20Image?label=Build&logo=docker&style=for-the-badge&color=8add44"></a>
+  <a href="https://gitpod.io/#https://github.com/xsre/xsrepod" target="_blank" title="Open in Gitpod: Ready to Code"><img src="https://img.shields.io/badge/Prebuild-READY%20%E2%86%97-8add44.svg?logo=gitpod&style=for-the-badge" alt="Open in Gitpod: Ready to Code" /></a>
+  <a href="https://github.com/xsre/xsrepod/actions/workflows/docker-release.yml" title="CI Build Status: Docker Image"><img alt="GitHub Workflow Status" src="https://img.shields.io/github/workflow/status/nberlette/gitpod-enhanced/Release%20Docker%20Image?label=Build&logo=docker&style=for-the-badge&color=8add44"></a>
   <img src="https://img.shields.io/badge/Bash-v5-333.svg?logo=gnubash&logoColor=8add44&style=for-the-badge" alt="GNU Bash: Bourne Again Shell" />
   <img src="https://img.shields.io/badge/PNPM-v7-333.svg?logo=pnpm&style=for-the-badge" alt="PNPM: Performant Node Package Management" />
 </div><br>
 
 <div align="center">
 
-Turbocharged [Gitpod Workspace Image](https://hub.docker.com/r/nberlette/gitpod-enhanced) built on top of the official
+Turbocharged [Gitpod Workspace Image](https://hub.docker.com/r/sysrex/xsrepod) built on top of the official
 [**`gitpod/workspace-full`**](https://hub.docker.com/r/gitpod/workspace-full) image — with some tasteful, opinionated
 enhancements focused solely on improving developer experience. Most of the configurations are directly ported over from
-[my dotfiles repository](https://github.com/nberlette/dotfiles).
+[my dotfiles repository](https://github.com/sysrex/dotfiles).
 
 </div>
 
@@ -42,7 +42,7 @@ image: nberlette/gitpod-enhanced:latest
 > **Note**: if you have `dotfiles` configured in your [Gitpod Preferences](https://gitpod.io/preferences), this project
 > may cause some file conflicts with it.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/nberlette/gitpod-enhanced)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/xsre/xsrepod)
 
 ## Features
 
@@ -200,11 +200,11 @@ here.
 
 Please [read the guidelines for contributing](./contribute), as well as our [community code of conduct](./conduct)
 before you make any contributions. Once you feel familiar with them, if you have any questions just
-[open an issue](https://github.com/nberlette/gitpod-enhanced/issues) or contact me directly!
+[open an issue](https://github.com/xsre/xsrepod/issues) or contact me directly!
 
 Thanks!
 
 ### License
 
-[MIT](https://mit-license.org) © 2022 [Nicholas Berlette](https://github.com/nberlette) &middot; not affiliated with
+[MIT](https://mit-license.org) © 2022 [sysrex](https://github.com/sysrex) &middot; not affiliated with
 [gitpod.io](https://gitpod.io) &middot; [contribute](./contribute) &middot; [code of conduct](./conduct)

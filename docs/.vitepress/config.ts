@@ -3,11 +3,11 @@ import { defineConfig, type DefaultTheme, type HeadConfig } from 'vitepress'
 
 export default defineConfig({
   lang: 'en-US',
-  title: 'Gitpod Enhanced',
+  title: 'xsrepod',
   base: '/',
   themeConfig: <DefaultTheme.Config>{
     logo: '/gitpod.svg',
-    repo: 'nberlette/gitpod-enhanced',
+    repo: 'xsre/xsrepod',
     nav: [
       {
         text: 'Home',
@@ -19,11 +19,11 @@ export default defineConfig({
       },
       {
         text: 'View on GitHub',
-        link: 'https://github.com/nberlette/gitpod-enhanced',
+        link: 'https://github.com/xsre/xsrepod',
       },
       {
         text: 'Edit in Gitpod',
-        link: 'https://gitpod.io/#https://github.com/nberlette/gitpod-enhanced',
+        link: 'https://gitpod.io/#https://github.com/xsre/xsrepod',
       },
     ],
     docsDir: 'docs',
