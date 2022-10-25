@@ -22,12 +22,6 @@ RUN brew update && brew upgrade && brew cleanup
 # copy a couple files needed for the next couple steps
 COPY --chown=gitpod:gitpod [ ".tarignore", ".Brewfile", "/home/gitpod/" ]
 
-# pull down and extract sysrex/dotfiles with curl + tar
-RUN curl -fsSL "https://github.com/sysrex/dotfiles/archive/main.tar.gz" | \
-    tar -xz -C "$HOME" --overwrite -X ~/.tarignore --wildcards --anchored \
-    --ignore-case --exclude-backups --exclude-vcs --backup=existing --totals \
-    --strip-components=1 -o --owner=gitpod --group=gitpod ;
-
 # clean some things up with .gitconfig and .gitignore
 RUN cat "$HOME/gitconfig" >> "$HOME/.gitconfig" && \
     rm -f "$HOME/gitconfig" "$HOME/.gitignore" "$HOME/.profile" &>/dev/null; \
