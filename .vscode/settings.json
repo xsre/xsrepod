@@ -4,25 +4,5 @@
   // nberlette.gitpod-enhanced
   "git.enableCommitSigning": true,
 
-  // eg2.vscode-npm-script
-  "npm.bin": "pnpm",
-  "npm.runInTerminal": true,
-  "npm.enableRunFromFolder": true,
-  "npm.fetchOnlinePackageInfo": true,
-  "npm.autoDetect": "on",
-  "npm.packageManager": "pnpm",
-  "npm.runSilent": true,
-  "npm.useRootDirectory": true,
-
-  // christian-kohler.npm-intellisense
-  "npm-intellisense.importES6": true,
-  "npm-intellisense.importQuotes": "'",
-  "npm-intellisense.importDeclarationType": "const", // for require()
-  "npm-intellisense.importLinebreak": "\n",
-  "npm-intellisense.recursivePackageJsonLookup": true,
-  "npm-intellisense.packageSubfoldersIntellisense": true,
-  "npm-intellisense.showBuildInLibs": true,
-  "npm-intellisense.scanDevDependencies": true,
-
   // your extension here...?
 }

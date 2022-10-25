@@ -1,62 +1,43 @@
-// https://aka.ms/devcontainer.json
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.245.2/containers/ubuntu
 {
-	"name": "Bash (Community)",
+	"name": "Ubuntu",
 	"build": {
 		"dockerfile": "Dockerfile",
-		"args": {
-      // For Apple Silicon (arm64) use Debian 11, Debian 9, Ubuntu 18.04, or Ubuntu 21.04.
-      "VARIANT": "ubuntu-21.04",
-      // British Standard Time (BST) for the timezone
-      "TZ": "Europe/London"
-      // set other build args here, if you wish...
-    }
+		// Update 'VARIANT' to pick an Ubuntu version: jammy / ubuntu-22.04, focal / ubuntu-20.04, bionic /ubuntu-18.04
+		// Use ubuntu-22.04 or ubuntu-18.04 on local arm64/Apple Silicon.
+		"args": { 
+			"VARIANT": "ubuntu-22.04", 
+			"TZ": "Europe/London"
+		}
 	},
-
 	"customizations": {
 		"vscode": {
 			// *default* container specific settings.json values on container create.
 			"settings": {
-				"terminal.integrated.defaultProfile.linux": "bash (2)",
-        "git.enableCommitSigning": true
+        		"git.enableCommitSigning": true
 			},
-      // vscode extensions to pre-install at build time
+            // vscode extensions to pre-install at build time
 			"extensions": [
 				"editorconfig.editorconfig",
-				"antfu.vite",
-				"antfu.iconify",
-				"dbaeumer.vscode-eslint",
-				"esbenp.prettier-vscode",
-				"foxundermoon.shell-format",
-				"timonwong.shellcheck",
-				"mads-hartmann.bash-ide-vscode",
-				"rogalmic.bash-debug",
-				"Jacano.vscode-pnpm",
-				"jock.svg",
 				"redhat.vscode-yaml",
-				"eg2.vscode-npm-script",
-				"vsls-contrib.gistfs",
-				"dotiful.dotfiles-syntax-highlighting",
-				"duniul.dircolors",
 				"ms-azuretools.vscode-docker"
 			]
 		}
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [],
+	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "uname -a",
+	// "postCreateCommand": "uname -a",
 
-	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
-	// "remoteUser": "vscode",
+	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"features": {
-		"git": "os-provided",
+		"kubectl-helm-minikube": "latest",
+		"terraform": "latest",
 		"github-cli": "latest",
-		"sshd": "latest",
-		"homebrew": "latest",
-		"python": "os-provided",
-		"ruby": "3.1",
-		"rust": "latest"
+		"aws-cli": "latest",
+		"golang": "latest"
 	}
 }
